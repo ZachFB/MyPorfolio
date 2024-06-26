@@ -1,0 +1,178 @@
+/* Default css */
+@font-face{
+  font-family: 'NunitoS';
+  src: url('./assets/Font/Nunito_Sans/static/NunitoSans_7pt_Condensed-Black.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'NotoS';
+  src: url('./assets/Font/Noto_Sans/static/NotoSans_SemiCondensed-Thin.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'NotoS1';
+  src: url('./assets/Font/Noto_Sans/static/NotoSans-Regular.ttf') format('truetype');
+}
+
+*{
+  margin : 0;
+  padding :0;
+  box-sizing : border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 75px;
+}
+
+body{
+  overflow-x : hidden;
+  position : relative;
+}
+
+.scrolled{
+  position :fixed;
+  background: #121212;
+  z-index : 9999;
+  transition: 0.32s ease-in-out;
+}
+
+.actif{
+  color: #ffffff;
+}
+
+.inactif{
+  color: #fff5;
+}
+
+.inactif:hover{
+color:#fff9
+}
+
+.socialborder:hover{
+  color: #121212;
+  border: 2px solid transparent;
+}
+
+.socialborder{
+  border : solid 2px rgba(225, 225, 225, 0.5);
+  background-color: rgba(217, 217, 217, 0.1);
+  position: relative;
+}
+
+.btn{
+  border: solid 2px rgba(225, 225, 225, 0.5);
+  position:relative
+}
+
+.btn::before{
+content:"";
+width: 0%;
+height: 100%;
+position: absolute;
+top:0;
+left:0;
+z-index:-3;
+background-color: #fff;
+border-radius: 6px;
+transition: 0.4s ease-in-out;
+}
+
+.btn:hover{
+  color: #121212;
+  border: 2px solid transparent;
+}
+
+.btn:hover::before{
+content: "";
+width:100%;
+height:100%;
+position: absolute;
+}
+
+.icon1{
+  transition: 0.3s ease-in-out;
+}
+
+.but{
+  transition: 0.3s ease-in-out;
+}
+
+.but:hover{
+  font-size: 18px;
+  width : 100%;
+}
+
+.but:hover .icon1{
+  margin-left : 30px;
+}
+
+.font1{
+  font-family: "NunitoS";
+}
+
+.font2{
+  font-family: "NotoS"
+}
+
+.font3{
+  font-family: "NotoS1"
+}
+
+.Logo{
+transition: 1s;
+}
+
+.specialBG{
+background: rgb(2,0,36);
+background: linear-gradient(262deg, rgba(2,0,36,1) 0%, rgba(180,1,113,1) 100%);
+}
+
+.inputBg{
+  background: rgb(37,34,80);
+  background: linear-gradient(262deg, rgba(37,34,80,0.5298494397759104) 0%, rgba(0,0,0,0.4962359943977591) 100%);
+  transition: 0.5s ease-in-out;
+}
+
+
+
+/* Reste */
+.App {
+  text-align: center;
+  margin-top : -8px
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
